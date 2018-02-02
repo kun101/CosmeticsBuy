@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tony.myapplication.PostActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_focused" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/productWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Weight"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/productIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingredients"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/productFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Features"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/productPackaging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Packaging"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/productDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Disclaimer"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/productPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Product" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--product image
+    product title
+    ingredients
+    features
+    weight
+    packaging
+    disclaimer
+    price-->
+</RelativeLayout>

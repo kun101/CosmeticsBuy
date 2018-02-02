@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cart_display_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cast_album_art_placeholder" />
+
+        <TextView
+            android:id="@+id/cart_display_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@+id/cart_display_image"
+            android:text="Sample Product" />
+
+        <TextView
+            android:id="@+id/cart_display_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@+id/cart_display_image"
+            android:layout_alignParentRight="true"
+            android:text="399" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/remove_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cart_display_price"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            app:backgroundTint="#ffffff"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

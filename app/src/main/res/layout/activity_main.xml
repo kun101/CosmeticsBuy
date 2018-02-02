@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tony.myapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/drawerbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/NavView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/header"
+                app:itemBackground="@color/fui_transparent"
+                app:itemIconTint="@color/drawer_item"
+                app:itemTextColor="@color/drawer_item"
+                app:menu="@menu/drawermenu">
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/background_light"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.WindowTitle">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_text_1" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_text_2" />
+
+    </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tabs"
+            android:clickable="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
+
+
