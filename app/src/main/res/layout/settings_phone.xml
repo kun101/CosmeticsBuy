@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:id="@+id/checkout_quantity"
+    android:scrollbars="vertical"
+    android:orientation="vertical" android:gravity="center">
+
+    <EditText
+        android:id="@+id/settings_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:visibility="visible"/>
+
+</LinearLayout>
