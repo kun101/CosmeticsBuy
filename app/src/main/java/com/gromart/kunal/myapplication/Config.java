@@ -7,5 +7,5 @@ package com.example.tony.myapplication;
 public class Config {
 
     public static final String EMAIL ="blakpot32@gmail.com";
-    public static final String PASSWORD ="Fyikon101";
+    public static final String PASSWORD ="password";
 }
